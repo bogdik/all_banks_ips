@@ -1,7 +1,7 @@
 CSV file of all banks domains and IPs provided by [FONDY Payment Service Provider](https://fondy.eu)
 =====
 ```
-python2.7 get_ips.py
+python2 get_ips.py
 ```
 
 resulting file acs_url.csv contains all banks main websites and 3DSecure pages domains which are called Access Controll Servers
@@ -19,7 +19,7 @@ in order customers could top up having negative account balance.
 
 ## get plain IP's by country
 ```
-python2.7 get_ips_plain.py --country 'us' --file result_ips_us.csv
+python2 get_ips_plain.py --country 'us' --file result_ips_us.csv
 ```
 
 ## Keys
@@ -37,5 +37,6 @@ python2.7 get_ips_plain.py --country 'us' --file result_ips_us.csv
 ## Author
 
 Maxim Kozenko, max.dnu@gmail.com
+
 Forked version by Bogdik
 
