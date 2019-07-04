@@ -22,7 +22,20 @@ in order customers could top up having negative account balance.
 python2.7 get_ips_plain.py --country 'us' --file result_ips_us.csv
 ```
 
+## Keys
+```
+  -h, --help            - show this help message and exit
+  --country  [ ...]     - contiries (default: all)
+  --file FILE           - file to write (default: stdout)
+  --debug BOOLEAN         - debug information (default: false)
+  --infocount BOOLEAN - information count work (default: false)
+  --inforesult BOOLEAN - information result only (default: false)
+  --usetemp BOOLEAN     - use temp list,duplicate exclude, before write to file (default: false)
+  --progressbar BOOLEAN - show progress bar need progressbar module [pip install progressbar] (default: false)
+```
 
 ## Author
 
 Maxim Kozenko, max.dnu@gmail.com
+Forked version by Bogdik
+

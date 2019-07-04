@@ -26,8 +26,9 @@ if __name__ == "__main__":
     filename = 'acs_url.csv'
     tempfile = NamedTemporaryFile(delete=False)
 
-    with open(filename, 'rb') as csvFile, tempfile:
-        reader = csv.reader(csvFile, delimiter=',', quotechar='"')
+    with open(filename, 'rb') as tempfile:
+	with open(filename, 'rb') as csvFile:
+        	reader = csv.reader(csvFile, delimiter=',', quotechar='"')
         writer = csv.writer(tempfile, delimiter=',', quoting=csv.QUOTE_ALL)
         for row in reader:
             writer.writerow(get_ips(row))
